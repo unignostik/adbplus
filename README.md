@@ -12,7 +12,7 @@ Added simplifications:
 
 ### Installation
 1. Download adbplus executable from repo
-2. Add executable to gloabl path (same as with adb setup)
+2. Drag and drop executable in folder with adb (recommended)
 
 ### Usage
 
