@@ -1,7 +1,7 @@
 # adbplus
 adbplus is an ongoing project of mine aimed to provide a number of simplifications/extensions to Android adb 
 
-### Version 0.1:
+### Version 0.1
 
 Added simplifications: 
 1. ADB Push: No file directory parameter, just list file in current directory to push
