@@ -12,3 +12,27 @@ Added simplifications:
 2. ADB Pull: No file destination parameter, file will be placed in current directory
 3. ADB Install: Install given .apk in current directory without providing path
 4. Flashing Recovery Images: Flash given recovery image in current directory with a single command
+
+### Documentation
+
+
+
+### Usage
+
+from current directory:
+
+adbplus push
+  
+   <code> adbplus push example.file sdcard/folder </code>
+   
+adbplus pull
+  
+   <code> adbplus pull sdcard/folder/exmaple.file </code>
+   
+adbplus install
+
+<code> adbplus install example.apk </code>
+
+adbplus recoveryflash
+
+<code> adbplus recoveryflash exampleRecovery.img </code>
