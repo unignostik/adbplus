@@ -8,6 +8,7 @@ Added simplifications:
 2. ADB Pull: No file destination parameter, file will be placed in current directory
 3. ADB Install: Install given .apk in current directory without providing path
 4. Flashing Recovery Images: Flash given recovery image in current directory with a single command
+5. Flashing ROMs: Load ROM, wipe device, and flash ROM with a single command
 
 ### Installation
 1. Download adbplus executable from repo
@@ -32,3 +33,7 @@ adbplus install
 adbplus recoveryflash
 
 <code> adbplus recoveryflash exampleRecovery.img </code>
+
+adbplus romflash
+
+<code> adbplus romflash exampleROM.zip </code>
