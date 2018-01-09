@@ -1,7 +1,7 @@
 # adbplus
 adbplus is an ongoing project of mine aimed to provide a number of simplifications and extensions to Android ADB 
 
-### progress
+### Progress
 
 #### initial build
 1. use adb push and adb pull with spaces in your directories and file names
@@ -13,6 +13,9 @@ adbplus is an ongoing project of mine aimed to provide a number of simplificatio
 3. Enjoy
 
 ### Usage
-Semi-batch install:
+#####Semi-batch install
+
+Applications should be seperated by commas with the last package followed by a period:
+
 <code>adbplus install example1.apk, example2.apk, example4.apk.</code>
 
