@@ -13,7 +13,7 @@ adbplus is an ongoing project of mine aimed to provide a number of simplificatio
 3. Enjoy
 
 ### Usage
-#####Semi-batch install
+<b>Semi-batch install</b>
 
 Applications should be seperated by commas with the last package followed by a period:
 
