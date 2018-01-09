@@ -10,7 +10,9 @@ adbplus is an ongoing project of mine aimed to provide a number of simplificatio
 
 ### Installation
 1. Download 'adbplus' executable
-2. Place in PATH, just as you did setting up adb
+2a. Place in PATH, just as you did setting up adb
+or
+2b. Navigate to directory where adbplus is located and run it from there
 3. Enjoy
 
 ### Usage
