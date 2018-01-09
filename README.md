@@ -15,6 +15,8 @@ Note: adbplus requires adb to be installed on your machine before useage availab
 3. Enjoy
 
 ### Usage
+From terminal, 
+
 <b>Semi-batch install</b>
 
 Applications should be seperated by commas with the last package followed by a period:
