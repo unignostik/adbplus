@@ -14,13 +14,13 @@ adbplus is an ongoing project of mine aimed to provide a number of simplificatio
 3. Enjoy
 
 ### Usage
-<b>1. Semi-batch install</b>
+<b>Semi-batch install</b>
 
 Applications should be seperated by commas with the last package followed by a period:
 
 <code>adbplus install example1.apk, example2.apk, example4.apk.</code>
 
-<b>2. Push and Pull</b>
+<b>Push and Pull</b>
 
 Use as normal adb push and pull, just don't worry about the space names, adbplus got you
 
