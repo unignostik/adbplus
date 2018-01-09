@@ -4,8 +4,9 @@ adbplus is an ongoing project of mine aimed to provide a number of simplificatio
 ### Progress
 
 #### initial build
-1. use adb push and adb pull with spaces in your directories and file names
-2. Semi-batch install apps with one command
+1. Semi-batch install apps with one command
+2. use adb push and adb pull with spaces in your directories and file names
+
 
 ### Installation
 1. Download 'adbplus' executable
@@ -13,9 +14,16 @@ adbplus is an ongoing project of mine aimed to provide a number of simplificatio
 3. Enjoy
 
 ### Usage
-<b>Semi-batch install</b>
+<b>1. Semi-batch install</b>
 
 Applications should be seperated by commas with the last package followed by a period:
 
 <code>adbplus install example1.apk, example2.apk, example4.apk.</code>
 
+<b>2. Push and Pull</b>
+
+Use as normal adb push and pull, just don't worry about the space names, adbplus got you
+
+<code>adbplus push /Users/Example Folder/example file.txt</code>
+
+<code>adbplus pull Example Folder/example file.txt /Users/Example Folder/</code>
