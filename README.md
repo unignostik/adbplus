@@ -1,6 +1,9 @@
 # adbplus
 adbplus is an ongoing project of mine aimed to provide a number of simplifications and extensions to Android ADB 
 
+### Support
+Linux and Mac OS
+
 ### Progress
 
 #### initial build
