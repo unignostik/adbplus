@@ -14,11 +14,8 @@
 bool in_array(const string &value, const vector<string> &array);
 
 int main(int argc, const char * argv[]) {
-    //supported commands array, used to prevent wrongful commands
-    vector<string> supported = {"flashrecovery", "flashrom", "install", "push", "pull"};
-    
     //for use with adbplusInstall
-    vector<string> install {"ex1.apk,", "ex2.apk,", "ex3.apk."};
+    vector<string> install;
     
     //create instance
     adbExtensions adbplus;
@@ -30,19 +27,14 @@ int main(int argc, const char * argv[]) {
     //second argument is adb command to execute, rest are parameters
     else {
         //check for valid arguments, if not exit with help menu
-        if (in_array(argv[1], supported)) {
             if (strcmp(argv[1], "install") == 0) {
                 for(int i = 2; i < argc; i++) install.push_back(argv[i]);
                 adbplus.adbplusInstall(install);
             }
             if (strcmp(argv[1], "push") == 0) adbplus.adbplusPush(argv[2], argv[3]);
             if (strcmp(argv[1], "pull") == 0) adbplus.adbplusPull(argv[2], argv[3]);
-        } else {
-            cout << argv[1] << " is not a supported command..\n\n";
-            adbplus.adbplusHelp();
-        }
     }
-    cout << endl;
+    cout << "adbplus has exited" << endl;
     return 0;
 }
 
