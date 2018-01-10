@@ -45,10 +45,12 @@ void adbExtensions::adbplusPush(string pushFrom, string pushTo) {
     if ((pushFrom.find(' ') != string::npos) || (pushTo.find(' ') != string::npos)) {
         //found spaces:
         //replace them with appropriate format
-        for (int pos=0; (pos = pushFrom.find(old, pos)) != string::npos; pos+=rep.length())
-            pushFrom.replace(pos, old.length(), rep);
-        for (int pos=0; (pos = pushTo.find(old, pos)) != string::npos; pos+=rep.length())
-            pushTo.replace(pos, old.length(), rep);
+        for (int pos=0; (pos = pushFrom.find(old, pos)) != string::npos; pos+=rep.length()) pushFrom.replace(pos, old.length(), rep);
+        for (int pos=0; (pos = pushTo.find(old, pos)) != string::npos; pos+=rep.length()) pushTo.replace(pos, old.length(), rep);
+        //perform push
+        string arg = "adb push " + pushFrom + " " + pushTo;
+        cout << arg;
+        //system(arg.c_str());
     } else {
         //no spaces found
         cout << "No spaces found.. please use adb for basic pushes";
@@ -64,10 +66,11 @@ void adbExtensions::adbplusPull(string pullFrom, string pullTo) {
     if ((pullFrom.find(' ') != string::npos) || (pullTo.find(' ') != string::npos)) {
         //found spaces:
         //replace them with appropriate format
-        for (int pos=0; (pos = pullFrom.find(old, pos)) != string::npos; pos+=rep.length())
-            pullFrom.replace(pos, old.length(), rep);
-        for (int pos=0; (pos = pullTo.find(old, pos)) != string::npos; pos+=rep.length())
-            pullTo.replace(pos, old.length(), rep);
+        for (int pos=0; (pos = pullFrom.find(old, pos)) != string::npos; pos+=rep.length()) pullFrom.replace(pos, old.length(), rep);
+        for (int pos=0; (pos = pullTo.find(old, pos)) != string::npos; pos+=rep.length()) pullTo.replace(pos, old.length(), rep);
+        //perform pull
+        string arg = "adb pull " + pullFrom + " " + pullTo;
+        system(arg.c_str());
     } else {
         //no spaces found
         cout << "No spaces found.. please use adb for basic pulls";

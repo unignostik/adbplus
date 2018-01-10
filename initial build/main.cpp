@@ -15,10 +15,10 @@ bool in_array(const string &value, const vector<string> &array);
 
 int main(int argc, const char * argv[]) {
     //supported commands array, used to prevent wrongful commands
-    vector<string> supported = {"install", "push", "pull"};
+    vector<string> supported = {"flashrecovery", "flashrom", "install", "push", "pull"};
     
     //for use with adbplusInstall
-    vector<string> install;
+    vector<string> install {"ex1.apk,", "ex2.apk,", "ex3.apk."};
     
     //create instance
     adbExtensions adbplus;
